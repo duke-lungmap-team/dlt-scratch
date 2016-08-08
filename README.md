@@ -28,4 +28,8 @@ conda install spyder
 **Note**: I don't use the usual conda install library due to this [issue](https://github.com/conda/conda/issues/2448).
 
 #### Jupyter
->Using the `Dockerfile` in this repository, you can recreate our Jupyter environment that we are using, which is being hosted here (TBD).
+>Using the `Dockerfile` in this repository, you can recreate our Jupyter environment that we are using, which is being hosted here (TBD). To create this environment, follow these commands.
+>>`docker build -t jupyter/lungmap .`
+>>`docker run -d -p 8888:8888 jupyter/lunmap`
+> Note, if you need to mount a volume it should be done as follow:
+>>`docker run -d -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/work jupyter/lunmap`
