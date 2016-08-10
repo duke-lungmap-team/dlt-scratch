@@ -23,7 +23,9 @@ called `opencv3`. To recreate this environment, follow these steps:
 conda create -n opencv3 numpy scipy scikit-learn matplotlib python=3
 source activate opencv3
 conda install -c https://conda.binstar.org/menpo opencv3
+conda install -c conda-forge tensorflow
 conda install spyder
+
 ```
 **Note**: I don't use the usual conda install library due to this [issue](https://github.com/conda/conda/issues/2448).
 
