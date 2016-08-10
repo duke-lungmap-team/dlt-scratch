@@ -24,7 +24,7 @@ Not at present, but they expect to get more in the near future.
 
 - What do the various probes represent?
 
-Please see the attached [PDF]("data/Cell specific markers 07_12_2016 Rev SEW.pdf") or [spreadsheet]("data/Cell specific markers 07_12_2016 Rev SEW.xlsx") for cell specific marker information.
+Please see the attached [PDF](data/markers01.pdf) or [spreadsheet](data/markers01.xlsx) for cell specific marker information.
 
 - How to distinguish distal and poximal acinar tubules in samples that are not stained with SOX9 and SFTPC?
   For example, this slide is stained with HOPX, NKX2.1 and ACTA2, could you let us know the criteria for distinguishing proximal and distal acinar tubules?
