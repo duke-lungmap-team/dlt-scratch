@@ -1,0 +1,42 @@
+## General
+
+- When will additional images be uploaded to LungMAP?
+- How many additional images are expected over the next 9 months?
+- Do we know what a sample is and what an experiment is?
+- Why are there multiple 20x images for the same experiment?
+- Are these different slices on z plane or some other location
+
+## Specific
+
+- Do you know if the structures circled in RED and YELLOW are to be considered the same anatomical structure or different?
+![image](data/image001.png)
+
+Hi, Cliburn.  They are not exactly the same, but rather distal and proximal regions of the same structure – the acinar tubule.
+
+The distal acinar tubules will become alveoli and the proximal acinar tubule will become alveolar ducts. They are different from the terminal and lateral bronchioles (distal conducitng airways).  And have (or will have) different subpopulations of cell types.  The epithelial cells of the acinar tubules will become type 1 and type 2 cells; while the cells of the bronchioles will become club cells, ciliated cells, and neuroendocrine cells.
+
+Here is the key:
+
+Red circles and arrows indicate the distal acinar tubules /acinar buds.
+SOX9 (green nuclei) is a marker for the distal acinar tubules. (SOX2 marks the proximal airway – not shown).
+ACTA2 staining (white) is normally not  found (or very weak) around the distal tubules.
+
+Yellow circles and arrows indicate the proximal acinar tubules, which lack or have low levels of SOX9 .
+These tend to be larger in diameter & have a single layer of smooth muscle cells (ACTA2/white)
+adjacent to the epithelium.  
+
+SFTPC (red, punctate, apical, cytoplasmic staining) is found in both proximal
+& distal tubules, but its expression is greater in the distal tubules than in the proximal tubules.
+
+Note expression gradients for SFTPC – increasing from proximal to distal;
+for SOX9 – increasing from proximal to distal; and for ACTA2 – decreasing from proximal to distal.
+
+Staining is not all of nothing.  There are transition zones/gradients for all 3 immunostains.
+
+These tubules are all continuous starting with the lateral bronchiole —> terminal bronchiole —>
+proximal acinar tubule —> distal acinar tubule.   There is no staining for SOX9 or SFTPC in
+the lateral or terminal bronchioles.
+
+See attached PowerPoint [slide](data/susan.pdf), too.
+
+Susan
