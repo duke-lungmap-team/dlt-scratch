@@ -1,4 +1,4 @@
-## General
+﻿## General
 
 - When will additional images be uploaded to LungMAP?
 - How many additional images are expected over the next 9 months?
@@ -7,6 +7,11 @@
 - Are these different slices on z plane or some other location
 
 ## Specific
+
+- How to distinguish distal and poximal acinar tubules in samples that are not stained with SOX9 and SFTPC?
+  For example, this slide is stained with HOPX, NKX2.1 and ACTA2, could you let us know the criteria for distinguishing proximal and distal acinar tubules? 
+![image](data/2014-012-004_20X_C57BL6_E16.5_LMM.14.24.8.24_HOPX_NKX2.1_ACTA2_003.PNG)
+
 
 - Do you know if the structures circled in RED and YELLOW are to be considered the same anatomical structure or different?
 ![image](data/image001.png)
