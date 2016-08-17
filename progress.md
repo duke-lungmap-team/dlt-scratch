@@ -1,0 +1,38 @@
+# Progress Log
+
+## Week 1
+
+- Created [image-subregion-extractor](https://github.com/whitews/image-subregion-extractor) for quickly saving sub-regions from images to create training and test sets [Scott]
+- Start TensorFlow image detection pipeline [Ben]
+- Blob detection using differential operators [Lina]
+- Kingshuk came as guest - made following suggestions
+    - Use full use of biological knowledge including 3D if available
+    - Watershed is difficult to make work well in his experience
+
+### Group meeting actions
+
+- Use systematic approach to pipeline stage evaluation [Lina]
+- To prepare tutorial on TensorFlow (Ben)
+- Evaluate classification pipeline (Scott)
+
+## Week 2
+
+- Update on marker spreadsheet by Susan
+- Revisions to blob detection pipeline [Lina]
+- Cascade classifier performs very poorly (Scott)
+- Created [image-subregion-detector](https://github.com/whitews/image-subregion-detector) for real-time image segmentation (Scott)
+![Detected](images/detected.png)
+- Created mapping of symbolic color names to HSV space (Scott)
+- Presented TensorFlow demo (Ben)
+
+### Group meeting actions
+
+- Develop list of segmentation targets and characteristics [Lina]
+- Manual feature selection/reduction for classification of acinar tubules [Lina]
+- Implement [digit recognition from Google Street View](https://www.udacity.com/course/deep-learning--ud730) pipeline for TensorFlow (Ben)
+- Add features to image-subregion-detector (Scott)
+    - API for region detection pipeline plugins
+    - Accept/Reject detected image regions
+    - Consider how to integrate image metadata to improve region detection
+    - Consider selection of positive and negative regions to Start
+    - Consider iterative improvement of detected regions (reinforcement learning)
