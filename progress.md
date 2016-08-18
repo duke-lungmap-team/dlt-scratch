@@ -36,3 +36,11 @@
     - Consider how to integrate image metadata to improve region detection
     - Consider selection of positive and negative regions to Start
     - Consider iterative improvement of detected regions (reinforcement learning)
+
+## Week 3
+
+- Updates to [image-subregion-detector](https://github.com/whitews/image-subregion-detector) (Scott)
+    - Expanded definition for 'black' HSV color range
+    - Added functionality to specify (multiple) background color ranges
+    - Remove detected sub-regions by right-clicking o them
+    - BUGFIXES: properly clear user-drawn rects, support 16-bit RGB TIFs (by downsampling to 8-bit)
