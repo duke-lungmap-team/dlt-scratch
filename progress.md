@@ -51,4 +51,11 @@
     - Ciliated cells
     - Bronchioles
     - Acinar tubules (some thoughts on acinar tubule criteria)
-    
+- Continuing research into the use of machine learning algorithms implemented via TensorFlow (Ben)
+    - If we were to build a training set (Scott's tool), we'd have about one-tenth the amount of usual machine learning training data
+    - Currnetly, implementing the digit recognition algorithm with low sample counts to simulate our situation to get a feel for "deterioration" of accurarcy with low training sets
+    - Spiking on the following machine learning techniques in TensorFlow:
+        - Covnets
+        - Regularization
+        - Dropout
+        - ReLUs (Rectified Linear Units)
