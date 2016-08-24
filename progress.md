@@ -44,3 +44,11 @@
     - Added functionality to specify (multiple) background color ranges
     - Remove detected sub-regions by right-clicking o them
     - BUGFIXES: properly clear user-drawn rects, support 16-bit RGB TIFs (by downsampling to 8-bit)
+- Explored segmentation targets (cells and anatomical structures as below) and their characteristics (Lina)
+  (brief descriptions are in this [ppt](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina) )
+    - Pericytes
+    - Club cells
+    - Ciliated cells
+    - Bronchioles
+    - Acinar tubules (some thoughts on acinar tubule criteria)
+    
