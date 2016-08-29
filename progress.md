@@ -42,7 +42,7 @@
 - Updates to [image-subregion-detector](https://github.com/whitews/image-subregion-detector) (Scott)
     - Expanded definition for 'black' HSV color range
     - Added functionality to specify (multiple) background color ranges
-    - Remove detected sub-regions by right-clicking o them
+    - Remove detected sub-regions by right-clicking on them
     - BUGFIXES: properly clear user-drawn rects, support 16-bit RGB TIFs (by downsampling to 8-bit)
 - Explored segmentation targets (cells and anatomical structures as below) and their characteristics (Lina)
   (brief descriptions are in this [ppt](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina) )
@@ -59,3 +59,16 @@
         - Regularization
         - Dropout
         - ReLUs (Rectified Linear Units)
+
+## Week 4
+
+- More updates to [image-subregion-detector](https://github.com/whitews/image-subregion-detector) (Scott)
+    - Added interactive preview image for easier navigation around the main canvas
+    - Added some stats about the detected regions (count, min/max/avg size)
+    - Display color range % for user drawn rectangle (helps choose appropriate bg colors)
+    - Better region detection for single cells (via new pre-erosion option)
+    - BUGFIXES:
+        - Clear sub-regions when selecting a new image
+        - Fix typo in maximum area label
+        - Fix error thrown if zero regions are detected
+
