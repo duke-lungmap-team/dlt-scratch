@@ -72,6 +72,8 @@
         - Clear sub-regions when selecting a new image
         - Fix typo in maximum area label
         - Fix error thrown if zero regions are detected
+    - New screenshot:
+    ![Detected_week4](scott/ImageSubregionDetector_week4.png)
 - Built two neural network algorithms (TensorFlow) to examine impact of sample size on accuracy (Ben)
     - Files for replication can be found in [./queries](./queries/README.md)
     - **Results**
