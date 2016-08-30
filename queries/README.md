@@ -19,3 +19,4 @@ Each query will have it's own folder that contains code used to investigate the 
 |-------------------|---------------|--------|-----|
 |Are images part of a 3D segment (can they be stacked)?|[./image_stacking](./image_stacking)|TBD|Need to get clarification from LungMap|
 |How can we create a training set for supervised learning?|[./training_set](./training_set)|TBD|Not sure this is viable, but testing|
+|What is a minimal viable sample size|[./viable_sample_size](./viable_sample_size)|TBD|results are inconclusive, need additional information|

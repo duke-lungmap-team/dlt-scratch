@@ -71,4 +71,13 @@
         - Clear sub-regions when selecting a new image
         - Fix typo in maximum area label
         - Fix error thrown if zero regions are detected
-
+- Built two neural network algorithms (TensorFlow) to examine impact of sample size on accuracy (Ben)
+    - Files for replication can be found in [./queries](./queries/README.md)
+    - **Results**
+        - Multinomial Logistic Classifier (Gradient Descent) - [visually seems to indicate > 4,000 training images](./queries/viable_sample_size/logistic_classifier2.png)
+        - Multinomial Logistic Classifier (Stochastic Gradient Descent) - [visually seems to indicate 4,000 training images](./queries/viable_sample_size/mlc_sgd.png)
+    - Where to go from here?
+        - Continue for at least one more week to see if there are techniques for dealing with small sample sizes, such as:
+        1. Try to make the network "deeper" - add several more nodes including Rectified Linear Units (ReLUs) and Regularization
+        2. Stocastic Gradient Descent, can be thought of as a type of bootstrap, would like to play around with this idea a bit more
+        3. Explore the idea of building a (supervised probabilistic classifier via Gaussian Copulas)[http://www.cimat.mx/~mrivera/bookchapt/salinas_copulas_lncs10.pdf]
