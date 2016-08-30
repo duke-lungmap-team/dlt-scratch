@@ -63,6 +63,7 @@
 ## Week 4
 
 - More updates to [image-subregion-detector](https://github.com/whitews/image-subregion-detector) (Scott)
+    - [Sub-region detector presentation](./scott/Sub-region Detector Algo Summary.pdf)
     - Added interactive preview image for easier navigation around the main canvas
     - Added some stats about the detected regions (count, min/max/avg size)
     - Display color range % for user drawn rectangle (helps choose appropriate bg colors)
