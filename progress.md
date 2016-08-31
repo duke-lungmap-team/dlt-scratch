@@ -90,10 +90,9 @@
         - Texture
         - Morphology
         - Architecture
-<<<<<<< HEAD
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 =======
-
+<<<<<<< HEAD
 ## Summary for August 2016
 
 ### Software
