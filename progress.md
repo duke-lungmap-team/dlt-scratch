@@ -90,4 +90,35 @@
         - Texture
         - Morphology
         - Architecture
-    - Identified [Blood vessels in 5 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
+<<<<<<< HEAD
+    - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
+=======
+
+## Summary for August 2016
+
+### Software
+- Set up an open source [Github repository](https://github.com/duke-lungmap-team/lungmap-scratch) to share code and documents among group
+- Built [image-subregion-extrractor](https://github.com/whitews/image-subregion-extractor) tool for rapid construction of training sets
+- Built [image-subregion-detector](https://github.com/whitews/image-subregion-detector) as GUI for evaluating image segmentation pipelines.
+
+### Algorithms
+- Investigation of Google's TensorFlow library for image classification using deep learning. Initial impression is that TensorFlow applications may require a larger training set than we have in order to give accurate classification, but this is still being [looked into](./queries/README.md).
+- [Rapid two-stage image segmentation pipeline](./scott/Sub-region Detector Algo Summary.pdf) based on blob detection by immunofluorescent color foreground/background partitioning and blob classification by size constraints developed as prototype engine for image-subregion-detector.
+- [Review of literature](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Commonly used features for analyzing Histology Images.pdf) for statistical features (color, texture, morphology and architecture) useful for classifying histology images
+
+### Knowledge Base
+- Review of [characteristic features](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Segmentation_targets.pdf)) of anatomical structures and cells in the developing lung
+
+## Objectives for September 2016
+
+- Construct a formal knowledge base of interesting anatomical structures and cells and their statistical features in the developing mouse lung
+  - Create database of extracted image regions of interest for each object of interest
+  - Calculate summary statistics for each feature of interest (color, morphology, topology, texture, architecture)
+  - Create a table with rows containing (name, stage, feature, measurement, statistic, value) e.g. (acinar tubule, E16.5, SOCS-9, area, min, 20 $\mu$m)
+- Refine two-stage image segmentation pipeline in sub-region-detector
+  - Use of knowledge base to provide sensible default parameters (e.g. # erosions) for known targets so as to increase sensitivity of blob detection (stage 1)
+  - Use of knowledge base to create filters based on feature statistics so as to increase specificity of blob classification (stage 2)
+- Complete evaluation of utility of deep learning methods with TensorFlow and possibility of integrating into Stage 2 if found to be useful
+- Implement functions for summary statistics (e.g. H1-H20 for texture) and evaluate if useful
+- Investigate usefulness of Fourier and Wavelet transforms
+>>>>>>> 1854b8efbe0abcd9ca1744a32cd0995b89c5c316
