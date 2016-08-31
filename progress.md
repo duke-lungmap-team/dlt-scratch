@@ -91,9 +91,10 @@
         - Morphology
         - Architecture
 - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
-=======
 
-<<<<<<< HEAD ## Summary for August 2016
+=======
+<<<<<<< HEAD 
+## Summary for August 2016
 
 ### Software
 - Set up an open source [Github repository](https://github.com/duke-lungmap-team/lungmap-scratch) to share code and documents among group
