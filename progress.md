@@ -45,7 +45,7 @@
     - Remove detected sub-regions by right-clicking on them
     - BUGFIXES: properly clear user-drawn rects, support 16-bit RGB TIFs (by downsampling to 8-bit)
 - Explored segmentation targets (cells and anatomical structures as below) and their characteristics (Lina)
-  (brief descriptions are in this [ppt](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina) )
+  (brief descriptions are in this [pdf](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Segmentation_targets.pdf) )
     - Pericytes
     - Club cells
     - Ciliated cells
@@ -84,3 +84,9 @@
         1. Try to make the network "deeper" - add several more nodes including Rectified Linear Units (ReLUs) and Regularization
         2. Stocastic Gradient Descent, can be thought of as a type of bootstrap, would like to play around with this idea a bit more
         3. Explore the idea of building a (supervised probabilistic classifier via Gaussian Copulas)[http://www.cimat.mx/~mrivera/bookchapt/salinas_copulas_lncs10.pdf]
+- Literature reading, summarized potential useful features that may facilitate structure classification(Lina)
+    - [features](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Commonly used features for analyzing Histology Images.pdf)
+        - Color
+        - Texture
+        - Morphology
+        - Architecture
