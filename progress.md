@@ -104,7 +104,7 @@
 - [Review of literature](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Commonly used features for analyzing Histology Images.pdf) for statistical features (color, texture, morphology and architecture) useful for classifying histology images
 
 ### Knowledge Base
-- Review of [characteristic features]((https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Segmentation_targets.pdf)) of anatomical structures and cells in the developing lung
+- Review of [characteristic features](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Segmentation_targets.pdf)) of anatomical structures and cells in the developing lung
 
 ## Objectives for September 2016
 
