@@ -84,13 +84,13 @@
         1. Try to make the network "deeper" - add several more nodes including Rectified Linear Units (ReLUs) and Regularization
         2. Stocastic Gradient Descent, can be thought of as a type of bootstrap, would like to play around with this idea a bit more
         3. Explore the idea of building a (supervised probabilistic classifier via Gaussian Copulas)[http://www.cimat.mx/~mrivera/bookchapt/salinas_copulas_lncs10.pdf]
-- Literature reading, summarized potential useful features that may facilitate structure classification(Lina)
+- Literature reading, summarized potential useful features that may facilitate structure classification, and identified blood vessels(Lina)
     - [features](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Commonly used features for analyzing Histology Images.pdf)
         - Color
         - Texture
         - Morphology
         - Architecture
-- Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
+    - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
 =======
 <<<<<<< HEAD 
