@@ -92,8 +92,6 @@
         - Architecture
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
-=======
-<<<<<<< HEAD 
 ## Summary for August 2016
 
 ### Software
@@ -121,4 +119,3 @@
 - Complete evaluation of utility of deep learning methods with TensorFlow and possibility of integrating into Stage 2 if found to be useful
 - Implement functions for summary statistics (e.g. H1-H20 for texture) and evaluate if useful
 - Investigate usefulness of Fourier and Wavelet transforms
->>>>>>> 1854b8efbe0abcd9ca1744a32cd0995b89c5c316
