@@ -111,7 +111,7 @@
 
 ### Software
 - Added ability of  [image-subregion-extrractor](https://github.com/whitews/image-subregion-extractor) to capture bit masks as numpy arrays
-- Built application to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
+- Built [plug-play-algorithm-app](https://github.com/duke-lungmap-team/plug-play-algorithm-app) to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
 - Script to run TensorBox training and evaluation completed - worked out issues with specifying training sets and evaluated on test data
 - Script to extract bounding boxes for extracted images in training set in format required for TensorBox
 
