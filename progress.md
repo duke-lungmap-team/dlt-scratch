@@ -107,15 +107,44 @@
 ### Knowledge Base
 - Review of [characteristic features](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/Segmentation_targets.pdf)) of anatomical structures and cells in the developing lung
 
-## Objectives for September 2016
+## Summary for September 2016
 
-- Construct a formal knowledge base of interesting anatomical structures and cells and their statistical features in the developing mouse lung
-  - Create database of extracted image regions of interest for each object of interest
-  - Calculate summary statistics for each feature of interest (color, morphology, topology, texture, architecture)
-  - Create a table with rows containing (name, stage, feature, measurement, statistic, value) e.g. (acinar tubule, E16.5, SOCS-9, area, min, 20 $\mu$m)
-- Refine two-stage image segmentation pipeline in sub-region-detector
-  - Use of knowledge base to provide sensible default parameters (e.g. # erosions) for known targets so as to increase sensitivity of blob detection (stage 1)
-  - Use of knowledge base to create filters based on feature statistics so as to increase specificity of blob classification (stage 2)
-- Complete evaluation of utility of deep learning methods with TensorFlow and possibility of integrating into Stage 2 if found to be useful
-- Implement functions for summary statistics (e.g. H1-H20 for texture) and evaluate if useful
-- Investigate usefulness of Fourier and Wavelet transforms
+### Software
+- Added ability of  [image-subregion-extrractor](https://github.com/whitews/image-subregion-extractor) to capture bit masks as numpy arrays
+- Built application to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
+- Script to run TensorBox training and evaluation completed - worked out issues with specifying training sets and evaluated on test data
+- Script to extract bounding boxes for extracted images in training set in format required for TensorBox
+
+### Algorithms
+- Use of [TensorBox](https://github.com/Russell91/TensorBox) for object detection and segmentation
+
+## Running objectives
+
+1. Heuristic algorithm to extract sub-images for training set (stage 1: create blobs from feature colors, stage 2: filter for blobs that are similar to exemplar)
+  - [x] Graphical user interface
+  - [x] Object recognition using single exemplar
+  - [x] Export images to numpy arrays as training sets
+  - [ ] Create JSON file with bounding boxes for target locations
+  - [ ] Object recognition using multiple exemplars
+2. Build positive and negative training sets for anatomical objects
+  - [ ] Tubules
+  - [ ] Terminal bronchioles
+  - [ ] Blood vessels
+  - [ ] Type II epithelial cells
+3. Evaluate summary image features for classification
+  - [ ] Define list of features for evaluation on training sets
+  - [ ] Evaluate performance of individual features for classification accuracy
+  - [ ] Evaluate performance of combined features for classification accuracy
+  - [ ] Integrate features found into stage 2 of image extractor
+4. Evaluate deep learning for in-image object recognition and segmentation
+  - [x] Evaluate how TensorFlow library works
+  - [x] Graphical user interface to plug-in algorithms
+  - [x] Train and test on standard data sets
+  - [ ] Train and test on LungMAP IHC positive and negative training sets
+5. Construct a formal knowledge base of interesting anatomical structures and cells and their statistical features in the developing mouse lung (with Anna Maria)
+  - [ ] Create a table with rows containing (name, stage, feature, measurement, statistic, value) e.g. (proximal tubule, E16.5, SOCS-9, area, min, 20 $\mu$m)
+  - [ ] Use of knowledge base to provide sensible default parameters (e.g. # erosions) for known targets so as to increase sensitivity of blob detection (stage 1)
+  - [ ] Use of knowledge base to create filters based on feature statistics so as to increase specificity of blob classification (stage 2)
+6. Explore patterns with statistical analysis of discovered image segments (with Kingshuk)
+  - [ ] Cross-sectional analysis of counts and distributions
+  - [ ] Longitudinal analysis of counts and distributions
