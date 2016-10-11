@@ -3,6 +3,7 @@ import os
 import re
 import json
 import numpy as np
+from PIL import Image
 
 try:
     base_dir = sys.argv[1]
@@ -11,17 +12,23 @@ except IndexError:
 
 os.chdir(base_dir)
 
-npy_files = os.listdir(base_dir)
+region_files = os.listdir(base_dir)
 
 region_dict = {}
 
-for npy_file in sorted(npy_files):
-    region = np.load(npy_file)
-    h, w, d = region.shape
+for f in sorted(region_files):
+    match = re.search('^(.+)_<(\d+),(\d+)>.(npy|tif)', f)
+    base_img_name, x, y, ext = match.groups()
 
-    match = re.search('^(.+)_<(\d+),(\d+)>.npy', npy_file)
-
-    base_img_name, x, y = match.groups()
+    if ext == 'npy':
+        region = np.load(f)
+        h, w, d = region.shape
+    elif ext == 'tif':
+        region = Image.open(f)
+        h = region.height
+        w = region.width
+    else:
+        continue
 
     orig_img_name = ".".join([base_img_name, 'tif'])
 
