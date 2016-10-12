@@ -118,17 +118,22 @@
 ### Algorithms
 - Use of [TensorBox](https://github.com/Russell91/TensorBox) for object detection and segmentation
 
+## Summary for October 2016
+
+- Complete code for extracting image segments and bounding boxes
+- Extract training sets for acinar tubules and bronchioles
+
 ## Running objectives
 
 1. Heuristic algorithm to extract sub-images for training set (stage 1: create blobs from feature colors, stage 2: filter for blobs that are similar to exemplar)
   - [x] Graphical user interface
   - [x] Object recognition using single exemplar
   - [x] Export images to numpy arrays as training sets
-  - [ ] Create JSON file with bounding boxes for target locations
+  - [x] Create JSON file with bounding boxes for target locations
   - [ ] Object recognition using multiple exemplars
 2. Build positive and negative training sets for anatomical objects
-  - [ ] Tubules
-  - [ ] Terminal bronchioles
+  - [x] [Tubules](https://duke.box.com/s/mz6a57k14b2chohhykuw4p4u9as6jr89)
+  - [x] [Terminal bronchioles](https://duke.box.com/s/k64zivfozlryddqzkloatnbi70c9ndcr)
   - [ ] Blood vessels
   - [ ] Type II epithelial cells
 3. Evaluate summary image features for classification
