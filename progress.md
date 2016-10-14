@@ -92,6 +92,26 @@
         - Architecture
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
+## Week of Oct 3rd
+
+- Created script to parse sub-region detector output (Scott)
+    - Output is a JSON file compatible with TensorBox
+    - Also created a Jupyter notebook to verify the location of the JSON bounding boxes
+
+## Week of Oct 10th
+
+- Extracted sub-regions for acinar tubles from experiment 73 - all 20x images at E16.5 (Scott)
+    - exp 73 has labelled proteins: Acta2 (white), Sftpc (red), and Sox9 (green)
+    - extracted distal acinar tubules as contours using the detector
+    - extracted proximal acinar tubules as sub-regions using the extractor
+    - extracted acinar tubule negative set of sub-regions using the extractor
+- Began looking at other experiments with 20x E16.5 images (Scott)
+    - Focused on experiment 41 - has labelled proteins: Sox2 (green), Nkx2-1 (red), Acta2 (white)
+    - Noticed the red probe was different than the red used in exp 73
+    - For red, exp 73's Sftpc used Alexa Fluor 568 and exp 41's Nkx2-1 used Alexa Fluor 555
+    - Is there any way to get the fluorophore from the API?
+
+
 ## Summary for August 2016
 
 ### Software
