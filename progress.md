@@ -92,6 +92,12 @@
         - Architecture
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
+## Week 5
+- Aligned first pipeline from lungmap images to Tensorbox. The results seem promising, so will continue to examine this tool for creating one algorithm capable of segmenting multiple anatomical objects within one image. However, to make this goal real, many iterations of models will need to be examined and experimented with. To help keep track of all algorithms, a separate repository (just for machine learning algorithms) is now up and available for review [here](https://github.com/duke-lungmap-team/lungmap_algorithms). This next week, we will plan to:
+  - Re-run the first model with 10,000,000 iterations (the default setting for this pipeline)
+  - This means we will need to set-up a VM to host this compute, so will work on getting that infrastructure set up.
+  - Train a new model that only considers the grayscale versions of the images. Allowing us to experiment with both possibilites that computer vision doesn't need the stains and/or building more complicated algorithms that first identify general anatomical structures (i.e. acinar tubule) that then feed into other algorithms that distinguish between distal and proximal.
+
 ## Summary for August 2016
 
 ### Software
