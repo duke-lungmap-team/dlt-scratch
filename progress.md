@@ -92,8 +92,26 @@
         - Architecture
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
-## Week 5
-- Aligned first pipeline from lungmap images to Tensorbox. The results seem promising, so will continue to examine this tool for creating one algorithm capable of segmenting multiple anatomical objects within one image. However, to make this goal real, many iterations of models will need to be examined and experimented with. To help keep track of all algorithms, a separate repository (just for machine learning algorithms) is now up and available for review [here](https://github.com/duke-lungmap-team/lungmap_algorithms). This next week, we will plan to:
+## Week of Oct 3rd
+
+- Created script to parse sub-region detector output (Scott)
+    - Output is a JSON file compatible with TensorBox
+    - Also created a Jupyter notebook to verify the location of the JSON bounding boxes
+
+## Week of Oct 10th
+
+- Extracted sub-regions for acinar tubles from experiment 73 - all 20x images at E16.5 (Scott)
+    - exp 73 has labelled proteins: Acta2 (white), Sftpc (red), and Sox9 (green)
+    - extracted distal acinar tubules as contours using the detector
+    - extracted proximal acinar tubules as sub-regions using the extractor
+    - extracted acinar tubule negative set of sub-regions using the extractor
+- Began looking at other experiments with 20x E16.5 images (Scott)
+    - Focused on experiment 41 - has labelled proteins: Sox2 (green), Nkx2-1 (red), Acta2 (white)
+    - Noticed the red probe was different than the red used in exp 73
+    - For red, exp 73's Sftpc used Alexa Fluor 568 and exp 41's Nkx2-1 used Alexa Fluor 555
+    - Is there any way to get the fluorophore from the API?
+- Aligned first pipeline from lungmap images to Tensorbox. (Ben)
+  - The results seem promising, so will continue to examine this tool for creating one algorithm capable of segmenting multiple anatomical objects within one image. However, to make this goal real, many iterations of models will need to be examined and experimented with. To help keep track of all algorithms, a separate repository (just for machine learning algorithms) is now up and available for review [here](https://github.com/duke-lungmap-team/lungmap_algorithms). This next week, we will plan to:
   - Re-run the first model with 10,000,000 iterations (the default setting for this pipeline)
   - This means we will need to set-up a VM to host this compute, so will work on getting that infrastructure set up.
   - Train a new model that only considers the grayscale versions of the images. Allowing us to experiment with both possibilites that computer vision doesn't need the stains and/or building more complicated algorithms that first identify general anatomical structures (i.e. acinar tubule) that then feed into other algorithms that distinguish between distal and proximal.
@@ -117,12 +135,17 @@
 
 ### Software
 - Added ability of  [image-subregion-extrractor](https://github.com/whitews/image-subregion-extractor) to capture bit masks as numpy arrays
-- Built application to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
+- Built [plug-play-algorithm-app](https://github.com/duke-lungmap-team/plug-play-algorithm-app) to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
 - Script to run TensorBox training and evaluation completed - worked out issues with specifying training sets and evaluated on test data
 - Script to extract bounding boxes for extracted images in training set in format required for TensorBox
 
 ### Algorithms
 - Use of [TensorBox](https://github.com/Russell91/TensorBox) for object detection and segmentation
+
+## Summary for October 2016
+
+- Complete code for extracting image segments and bounding boxes
+- Extract training sets for acinar tubules and bronchioles
 
 ## Running objectives
 
@@ -130,11 +153,11 @@
   - [x] Graphical user interface
   - [x] Object recognition using single exemplar
   - [x] Export images to numpy arrays as training sets
-  - [ ] Create JSON file with bounding boxes for target locations
+  - [x] Create JSON file with bounding boxes for target locations
   - [ ] Object recognition using multiple exemplars
 2. Build positive and negative training sets for anatomical objects
-  - [ ] Tubules
-  - [ ] Terminal bronchioles
+  - [x] [Tubules](https://duke.box.com/s/mz6a57k14b2chohhykuw4p4u9as6jr89)
+  - [x] [Terminal bronchioles](https://duke.box.com/s/k64zivfozlryddqzkloatnbi70c9ndcr)
   - [ ] Blood vessels
   - [ ] Type II epithelial cells
 3. Evaluate summary image features for classification
