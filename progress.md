@@ -115,6 +115,10 @@
   - Re-run the first model with 10,000,000 iterations (the default setting for this pipeline)
   - This means we will need to set-up a VM to host this compute, so will work on getting that infrastructure set up.
   - Train a new model that only considers the grayscale versions of the images. Allowing us to experiment with both possibilites that computer vision doesn't need the stains and/or building more complicated algorithms that first identify general anatomical structures (i.e. acinar tubule) that then feed into other algorithms that distinguish between distal and proximal.
+- Began extracting sub-regions for blood vessels at all developmental stages (Lina)
+- Added functions for image features (Lina)
+  - perimeter_area ratio (may be useful for distinguishing bronchioles from blood vessels)
+  - entropy (needed to be improved(return a single value from a sub-region instead of returning a value for each pixel))
 
 ## Summary for August 2016
 
