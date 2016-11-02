@@ -151,6 +151,17 @@
 - Complete code for extracting image segments and bounding boxes
 - Extract training sets for acinar tubules and bronchioles
 
+### Image classification Progress
+
+- Move to label-free system for robust classification
+- Initially used manual feature extraction
+- Now use `wndcharm` for extraction
+- Over 4000 features per image
+- Initial evaluation on 3 classes extracted by Scott (background, proxmial and distal acinar tubules)
+- Use of `sklearn` to construct pipelines for classification
+    - over 95% cross-validation accuracy seen with classifiers out-of-box (almost no tuning done)
+    - See Classification.ipynb notebook in cliburn folder for code
+
 ## Running objectives
 
 1. Heuristic algorithm to extract sub-images for training set (stage 1: create blobs from feature colors, stage 2: filter for blobs that are similar to exemplar)
