@@ -92,6 +92,34 @@
         - Architecture
     - Identified [Blood vessels in 6 images](https://github.com/duke-lungmap-team/lungmap-scratch/tree/master/Lina/blood_vessels.pdf)
 
+## Week of Oct 3rd
+
+- Created script to parse sub-region detector output (Scott)
+    - Output is a JSON file compatible with TensorBox
+    - Also created a Jupyter notebook to verify the location of the JSON bounding boxes
+
+## Week of Oct 10th
+
+- Extracted sub-regions for acinar tubles from experiment 73 - all 20x images at E16.5 (Scott)
+    - exp 73 has labelled proteins: Acta2 (white), Sftpc (red), and Sox9 (green)
+    - extracted distal acinar tubules as contours using the detector
+    - extracted proximal acinar tubules as sub-regions using the extractor
+    - extracted acinar tubule negative set of sub-regions using the extractor
+- Began looking at other experiments with 20x E16.5 images (Scott)
+    - Focused on experiment 41 - has labelled proteins: Sox2 (green), Nkx2-1 (red), Acta2 (white)
+    - Noticed the red probe was different than the red used in exp 73
+    - For red, exp 73's Sftpc used Alexa Fluor 568 and exp 41's Nkx2-1 used Alexa Fluor 555
+    - Is there any way to get the fluorophore from the API?
+- Aligned first pipeline from lungmap images to Tensorbox. (Ben)
+  - The results seem promising, so will continue to examine this tool for creating one algorithm capable of segmenting multiple anatomical objects within one image. However, to make this goal real, many iterations of models will need to be examined and experimented with. To help keep track of all algorithms, a separate repository (just for machine learning algorithms) is now up and available for review [here](https://github.com/duke-lungmap-team/lungmap_algorithms). This next week, we will plan to:
+  - Re-run the first model with 10,000,000 iterations (the default setting for this pipeline)
+  - This means we will need to set-up a VM to host this compute, so will work on getting that infrastructure set up.
+  - Train a new model that only considers the grayscale versions of the images. Allowing us to experiment with both possibilites that computer vision doesn't need the stains and/or building more complicated algorithms that first identify general anatomical structures (i.e. acinar tubule) that then feed into other algorithms that distinguish between distal and proximal.
+- Began extracting sub-regions for blood vessels at all developmental stages (Lina)
+- Added functions for image features (Lina)
+  - perimeter_area ratio (may be useful for distinguishing bronchioles from blood vessels)
+  - entropy (needed to be improved(return a single value from a sub-region instead of returning a value for each pixel))
+
 ## Summary for August 2016
 
 ### Software

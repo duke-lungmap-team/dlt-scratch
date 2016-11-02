@@ -17,7 +17,7 @@ region_files = os.listdir(base_dir)
 region_dict = {}
 
 for f in sorted(region_files):
-    match = re.search('^(.+)_<(\d+),(\d+)>.(npy|tif)', f)
+    match = re.search('^(.+)_(\d+),(\d+).(npy|tif)', f)
     base_img_name, x, y, ext = match.groups()
 
     if ext == 'npy':
