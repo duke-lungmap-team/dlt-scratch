@@ -1,3 +1,6 @@
+*.pic
+wndchrm_test_data/
+
 images/
 
 # Byte-compiled / optimized / DLL files
