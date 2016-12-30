@@ -30,8 +30,8 @@ out1_Lab = cv2.cvtColor(out1, cv2.COLOR_RGB2Lab)
 out1_Luv = cv2.cvtColor(out1, cv2.COLOR_RGB2Luv)
 out1_YCrCb = cv2.cvtColor(out1, cv2.COLOR_RGB2YCrCb)
 
-colors_name = ['out1_HSV', 'out1_HLS', 'out1_Lab', 'out1_Luv', 'out1_YCrCb']
-colors = [out1_HSV, out1_HLS, out1_Lab, out1_Luv, out1_YCrCb]
+colors_name = ['out1', 'out1_HSV', 'out1_HLS', 'out1_Lab', 'out1_Luv', 'out1_YCrCb']
+colors = [out1, out1_HSV, out1_HLS, out1_Lab, out1_Luv, out1_YCrCb]
 
 out1_colors = {}
 i=0
@@ -42,6 +42,16 @@ for color in colors:
     i=i+1
   
 #3-D plot
+
+fig = plt.figure()
+fig.suptitle('RGB', fontsize=20)
+ax = fig.add_subplot(111, projection='3d')
+Axes3D.scatter(ax, xs=out1_colors["out1_uniq"][:,0], ys=out1_colors["out1_uniq"][:,1], zs=out1_colors["out1_uniq"][:,2], zdir='z', s=20, c='cyan', depthshade=True)
+ax.set_xlabel('X Label')
+ax.set_ylabel('Y Label')
+ax.set_zlabel('Z Label')
+ax.view_init(30,220)
+plt.show()
 
 fig = plt.figure()
 fig.suptitle('HSV', fontsize=20)
