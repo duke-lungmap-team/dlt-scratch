@@ -194,7 +194,7 @@
   - [ ] Longitudinal analysis of counts and distributions
 
 ## Week of Jan 23rd
-- Augmented image training set for bronchioles and blood vessels (Lina)
-  - Method 1: Rotated image in 90^\circ, 180\circ, 270&deg
+- Augmented image training set of bronchioles and blood vessels (Lina)
+  - Method 1: Rotated image in 90\degree, 180\degree, 270\degree.
   - Method 2: Random transformed (shift, rescale, shear, zoom, flip, rotation) by making use of features in Keras.
-- Training classifier with the augmented training set.
+- Trained classifier with the augmented training set.
