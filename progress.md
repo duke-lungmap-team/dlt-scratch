@@ -211,6 +211,6 @@
 - Finished working prototype of web identifier to be feature complete with the Tkinter version (Scott)
 
 ## Week of Feb 6th
-- Began investigating custom features to better differentiate bronchioles from the "open" blood vessels in the E16.5 mouse images
+- Began investigating custom features to better differentiate bronchioles from the "open" blood vessels in the E16.5 mouse images (Scott)
   - One possibility is to incorporate categorical features: Cliburn recommended using the [OneHotEncoder from sklearn](http://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features), which looks promising
 
