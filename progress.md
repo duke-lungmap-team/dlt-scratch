@@ -138,7 +138,7 @@
 ## Summary for September 2016
 
 ### Software
-- Added ability of  [image-subregion-extrractor](https://github.com/whitews/image-subregion-extractor) to capture bit masks as numpy arrays
+- Added ability of  [image-subregion-extractor](https://github.com/whitews/image-subregion-extractor) to capture bit masks as numpy arrays
 - Built [plug-play-algorithm-app](https://github.com/duke-lungmap-team/plug-play-algorithm-app) to evaluate object recognition algorithms as plug-ins (successful demo using Haar cascade classifier plug-in for real-time face recognition)
 - Script to run TensorBox training and evaluation completed - worked out issues with specifying training sets and evaluated on test data
 - Script to extract bounding boxes for extracted images in training set in format required for TensorBox
@@ -193,8 +193,24 @@
   - [ ] Cross-sectional analysis of counts and distributions
   - [ ] Longitudinal analysis of counts and distributions
 
+## Summary for December 2016
+- Improved candidate search by using both the hue and saturation channels of the HSV image (Scott)
+
+## Week of Jan 16th
+- Began investigating replacing wnd-charm with custom features with good results & is much faster (Scott)
+
 ## Week of Jan 23rd
 - Augmented image training set of bronchioles and blood vessels (Lina)
   - Method 1: Rotated image in 90\degree, 180\degree, 270\degree.
   - Method 2: Random transformed (shift, rescale, shear, zoom, flip, rotation) by making use of features in Keras.
 - Trained classifier with the augmented training set.
+- Replaced wnd-charm in the Tkinter identifier application, much faster now & seems just as accurate (Scott)
+- Began work on web version of the image sub-region identifier app (Scott)
+
+## Week of Jan 30th
+- Finished working prototype of web identifier to be feature complete with the Tkinter version (Scott)
+
+## Week of Feb 6th
+- Began investigating custom features to better differentiate bronchioles from the "open" blood vessels in the E16.5 mouse images
+  - One possibility is to incorporate categorical features: Cliburn recommended using the [OneHotEncoder from sklearn](http://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features), which looks promising
+
