@@ -216,3 +216,11 @@
 
 - Dockerized a version of the [wa-isit app](https://github.com/whitews/wa-isit). Previously this app was deployed using flask's default web server. As we saw during a live test, and as documented in Flask, this was not a good idea. Took time to update the docker container to serve the application using uwsgi, so the [live demo](http://rapid-235.vm.duke.edu:5000/) is much more robust. (Ben)
   - working on porting (to Angular) a prototype web application ([goldmill](https://github.com/benneely/goldmill)) that will allow us to obtain better training data and make better use of the LungMap ontology. (Ben)
+  
+## Week of Feb 13th
+- Drafted a [roadmap](https://github.com/duke-lungmap-team/ihc-image-analysis/blob/master/roadmap.md) for delivery of final product to be build over the next year (Scott)
+
+## Week of Feb 20th
+- Began investigating improving the training set using polygon segmentations of target regions (Scott)
+  - In theory, this should improve the SNR for the custom feature metrics by ignoring the majority of peripheral pixels
+  - Began [version 2 of the sub-region extractor](https://github.com/whitews/image-subregion-poly-extractor)
