@@ -1,6 +1,7 @@
 *.zip
 *.pic
 wndchrm_test_data/
+.idea
 
 images/
 
