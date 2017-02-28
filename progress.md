@@ -227,3 +227,13 @@
 - Began investigating the potential criteria to exclude "outliers" (Lina)
   - "Outliers" are sub-regions that do not belong to any anatomical structural classes in the training set but forced to be one of them by our classifier.
   - Methods that I am investigating include distance based methods and kernel based novelty detection.
+
+## Update prior to Mar 1st meeting
+- Investigating polygon training set (Scott)
+  - Finished a working version of the [poly extractor](https://github.com/whitews/image-subregion-poly-extractor)
+    - Nice feature of the tool is that it extracts and saves both the bounding rectangle and the grayscale polygon mask, so it is easy to compare methods using the same training set on either the masked or original rectangular regions.
+  - Used the poly extractor to re-create training data for experiment 73
+    - Segmented 426 regions from the 4 images...yeah, this is tedious work and takes a while!
+  - Updated [lung-map-utils](https://github.com/duke-lungmap-team/lung-map-utils) to take optional user-specified mask and optional suffix for sig file names.
+  - Updated notebook for [generating signature files](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_feature_sig_file_generation.ipynb)
+  - Created notebook comparing accuracy of [custom features vs custom masked features vs wndcharm](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_features_vs_custom_feature_masked_vs_wndcharm.ipynb)
