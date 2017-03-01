@@ -244,3 +244,10 @@
   - Need Javascript Framework to help interact with DOM (using Angular v1). Will plan to have a sketch of training creator frontend.
   - Spiked on docker-compose. Will plan to build out the infrastructure via docker by next week.
   - Spiked on authentication via restful python framework. Ready to begin building out endpoints.
+
+- Investigating outlier detector (Lina)
+  - Used the "rectangular" training sub-regions with Scott's customized features to train the classifier.
+  - Predicted the class of the sub-region candidates.
+  - Did Z normalization using the mean and standard deviation from their predicted class.
+  - Counted the number of features that do not fall in the 3 standard deviations range (i.e. (-3, 3) after normalization).
+  - Planned to investigate other criteria that may be helpful for detecting outliers.
