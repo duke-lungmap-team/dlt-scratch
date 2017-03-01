@@ -237,3 +237,4 @@
   - Updated [lung-map-utils](https://github.com/duke-lungmap-team/lung-map-utils) to take optional user-specified mask and optional suffix for sig file names.
   - Updated notebook for [generating signature files](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_feature_sig_file_generation.ipynb)
   - Created notebook comparing accuracy of [custom features vs custom masked features vs wndcharm](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_features_vs_custom_feature_masked_vs_wndcharm.ipynb)
+  - **TODO:** If we want continue with the masked region strategy, the next step is to solve the contour filling issue with the candidates.
