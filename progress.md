@@ -237,3 +237,9 @@
   - Updated [lung-map-utils](https://github.com/duke-lungmap-team/lung-map-utils) to take optional user-specified mask and optional suffix for sig file names.
   - Updated notebook for [generating signature files](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_feature_sig_file_generation.ipynb)
   - Created notebook comparing accuracy of [custom features vs custom masked features vs wndcharm](https://github.com/duke-lungmap-team/lungmap-scratch/blob/master/scott/custom_features_vs_custom_feature_masked_vs_wndcharm.ipynb)
+
+- Researching application technology stack (Ben)
+  - Need an ORM - spiked on Django, SQLAlchemy. Ready to begin data modeling phase for application.
+  - Need Javascript Framework to help interact with DOM (using Angular v1). Will plan to have a sketch of training creator frontend.
+  - Spiked on docker-compose. Will plan to build out the infrastructure via docker by next week.
+  - Spiked on authentication via restful python framework. Ready to begin building out endpoints.
