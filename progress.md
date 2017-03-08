@@ -251,3 +251,6 @@
   - Did Z normalization using the mean and standard deviation from their predicted class.
   - Counted the number of features that do not fall in the 3 standard deviations range (i.e. (-3, 3) after normalization).
   - Planned to investigate other criteria that may be helpful for detecting outliers.
+
+## Update prior to Mar 8th meeting
+- Began solving contour filling issue with candidates on the boundary of an image (Scott)
