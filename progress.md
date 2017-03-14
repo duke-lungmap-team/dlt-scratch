@@ -254,3 +254,7 @@
 
 ## Update prior to Mar 8th meeting
 - Began solving contour filling issue with candidates on the boundary of an image (Scott)
+
+## Update prior to Mar 15th meeting
+- Solved contour filling for boundary candidates, in the process of updating the processing pipeline (Scott)
+
