@@ -257,4 +257,8 @@
 
 ## Update prior to Mar 15th meeting
 - Solved contour filling for boundary candidates, in the process of updating the processing pipeline (Scott)
+- Spiked on ImageField in Django and prototyped adding images to the database while at the same time calculating a SHA1 hash and deriving JPEG images. (Ben)
 
+## Update prior to Mar 22nd meeting
+- Refactored prototype django app to align better with the django-rest-framework (remove admin) and also remodeled the data model so that the LungmapImage table needs to be populated within the app and not through fixtures. (Ben)
+- Started to map out the RESTful API interface, will need feedback. (Ben)
