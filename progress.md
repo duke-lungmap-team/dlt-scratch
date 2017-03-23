@@ -262,5 +262,5 @@
 ## Update prior to Mar 22nd meeting
 - Refactored prototype django app to align better with the django-rest-framework (remove admin) and also remodeled the data model so that the LungmapImage table needs to be populated within the app and not through fixtures. (Ben)
 - Started to map out the RESTful API interface, will need feedback. (Ben)
-- Used PCA to visualize if the randomly picked sub-regions(polygon shaped) belongs to a class. (Lina)
+- Used PCA to visualize if the randomly picked sub-regions(polygon shaped) belong to a class. (Lina)
 - Started to create a function to calculate posterior probability for ridge regression. (Lina)
