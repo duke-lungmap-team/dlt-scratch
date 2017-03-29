@@ -267,3 +267,7 @@
 
 ## Update prior to Mar 29nd meeting
 - Created a function to calculate posterior probability for multinomial logistic regression. (Lina)
+- Processing pipeline successfully updated to handle polygon regions (Scott)
+  - created notebook for comparing polygon vs rectangular sub-regions
+- Reviewed and merged PR from Ben for the Django app (Scott)
+  - Experiment & Probe models created
