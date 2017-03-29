@@ -264,3 +264,6 @@
 - Started to map out the RESTful API interface, will need feedback. (Ben)
 - Used PCA to visualize if the randomly picked sub-regions(polygon shaped) belong to a class. (Lina)
 - Started to create a function to calculate posterior probability for ridge regression. (Lina)
+
+## Update prior to Mar 29nd meeting
+- Created a function to calculate posterior probability for multinomial logistic regression. (Lina)
