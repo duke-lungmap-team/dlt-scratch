@@ -271,3 +271,8 @@
   - created notebook for comparing polygon vs rectangular sub-regions
 - Reviewed and merged PR from Ben for the Django app (Scott)
   - Experiment & Probe models created
+
+
+## Update prior to Apr 5th meeting
+- Updated REST API for POSTing a new experiment (Scott)
+- Received prototype ontology from Anna Maria, having trouble parsing the relationships (Scott))
